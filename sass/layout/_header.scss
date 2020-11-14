@@ -1,0 +1,88 @@
+.container__header {
+  grid-row: 2 / 3;
+  grid-column: 1 / 1;
+
+  background-color: black;
+
+  &-1 {
+    width: 100%;
+    height: 40%;
+    background-color: $color-primary;
+    margin-top: 6rem;
+
+    @media only screen and(max-width:1200px) {
+      height: 35%;
+      width: 80%;
+    }
+    @media only screen and(max-width:700px) {
+      width: 100%;
+      margin-top: 6rem;
+    }
+    @media only screen and(max-width:550px) {
+      height: 40%;
+    }
+  }
+
+  &-2 {
+    width: 100%;
+    height: 60%;
+    background-color: $color-primary;
+    position: relative;
+    @media only screen and(max-width:700px) {
+      margin-top: 2rem;
+    }
+
+    &--title {
+      position: absolute;
+      right: 2vw;
+      bottom: 5vw;
+      @media only screen and(max-width:700px) {
+        bottom: 4vw;
+      }
+      @media only screen and(max-width:550px) {
+        right: 6vw;
+        bottom: 20vw;
+      }
+      @media only screen and(max-width:500px) {
+        bottom: 20vw;
+      }
+      @media only screen and(max-width:480px) {
+        bottom: 22vw;
+      }
+    }
+  }
+}
+
+.header__image {
+  height: 16rem;
+  width: 78vw;
+
+  @media only screen and(max-width:1200px) {
+    height: 10rem;
+    width: 68vw;
+  }
+  @media only screen and(max-width:800px) {
+    height: 8rem;
+    width: 68vw;
+  }
+  @media only screen and(max-width:700px) {
+    height: 8rem;
+    width: 90vw;
+  }
+  @media only screen and(max-width:500px) {
+    width: 90vh;
+  }
+}
+
+.header {
+  font-size: 13.19vw;
+  color: $color-white;
+  font-family: $font-domine;
+
+  @media only screen and(max-width:550px) {
+    font-size: 16.19vw;
+  }
+  @media only screen and(max-width:480px) {
+    font-size: 19.19vw;
+  }
+}

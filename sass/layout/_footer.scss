@@ -1,0 +1,122 @@
+.container__footer {
+  background-color: $color-primary;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and(max-width:800px) {
+    justify-content: center;
+
+    flex-direction: column;
+  }
+
+  &--1 {
+    background-color: $color-primary;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and(max-width:800px) {
+      width: 40%;
+    }
+    @media only screen and(max-width:500px) {
+      order: 2;
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &--2 {
+    background-color: $color-primary;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and(max-width:800px) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 85%;
+      margin-top: 2rem;
+    }
+    @media only screen and(max-width:500px) {
+      order: 1;
+      flex-direction: column;
+      font-size: 6.47vw;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  &--share {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    @media only screen and(max-width:800px) {
+      width: 100%;
+    }
+    @media only screen and(max-width:500px) {
+      width: 70%;
+    }
+  }
+  &--link-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    @media only screen and(max-width:800px) {
+      margin-right: 2rem;
+      justify-content: space-between;
+    }
+
+    @media only screen and(max-width:500px) {
+      flex-direction: column;
+    }
+  }
+  &--link-2 {
+    display: flex;
+    justify-content: space-evenly;
+    @media only screen and(max-width:800px) {
+      margin-right: 2rem;
+      justify-content: space-between;
+    }
+    @media only screen and(max-width:500px) {
+      flex-direction: column;
+    }
+  }
+
+  &--logo {
+    width: 70%;
+  }
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  fill: $color-white;
+}
+
+.footer__logo {
+  width: 100%;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: $color-white;
+  font-size: 3.47vw;
+  font-family: $font-domine;
+  &:hover {
+    color: $color-secondary;
+  }
+  @media only screen and(max-width:800px) {
+    margin-right: 2rem;
+  }
+  @media only screen and(max-width:500px) {
+    font-size: 9.47vw;
+    margin-bottom: 2rem;
+  }
+}
+
+.active {
+  color: $color-secondary;
+}

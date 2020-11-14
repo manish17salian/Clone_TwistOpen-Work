@@ -1,0 +1,69 @@
+// COLOR VARIABLES
+$color-primary: #000000;
+
+$color-secondary: #ee236b;
+
+$color-white: #ffff;
+
+$color-grid-1: #033457;
+$color-grid-2: #0c76aa;
+$color-grid-3: #fcad14;
+$color-grid-4: #2f2113;
+$color-grid-5: #245b91;
+$color-grid-6: #d3534e;
+$color-grid-7: #37ade2;
+$color-grid-8: #0a2f2d;
+$color-grid-9: #e78445;
+$color-grid-10: #8d2f3b;
+$color-grid-11: #00abaf;
+$color-grid-12: #323c4a;
+$color-grid-13: #6b7a8f;
+$color-grid-14: #72c064;
+
+// FONT VARIABLES
+@font-face {
+  font-family: "Domaine Display Bold Regular";
+  src: url("../DomaineDisplayBold.ttf");
+}
+
+$font-poppins: "Poppins", sans-serif;
+$font-domine: "Domaine Display Bold Regular", serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+
+  max-width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 18vh 35vw min-content 40vh;
+
+  @media only screen and(max-width:550px) {
+    grid-template-rows: 18vh 45vw min-content 40vh;
+  }
+
+  @media only screen and(max-width:550px) {
+    grid-template-rows: 18vh 55vw min-content 40vh;
+  }
+  @media only screen and(max-width:500px) {
+    grid-template-rows: 18vh 55vw min-content 100vh;
+  }
+  @media only screen and(max-width:480px) {
+    grid-template-rows: 18vh 65vw min-content 100vh;
+  }
+}
