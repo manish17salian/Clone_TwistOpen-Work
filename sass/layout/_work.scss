@@ -251,10 +251,13 @@
   font-family: $font-domine;
   font-weight: 700;
 }
+.grid__container--h4{
+    font-size: 1.67vw;
+}
 .grid__container--h4,
 .grid__container--h4-2,
 .grid__container--h4-3 {
-  font-size: 1.67vw;
+
   @media only screen and(max-width:800px) {
     font-size: 2.3rem;
   }
